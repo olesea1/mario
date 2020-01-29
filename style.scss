@@ -1,0 +1,36 @@
+$size: 50px;
+$dark: black;
+$light: green;
+section {
+  width: 5 * $size;
+  height: 2 * $size;
+  border: 0.02 * $size solid $dark;
+  .mario img, .cactus img {
+    width: $size - 0.04 * $size;
+    height: $size - 0.04 * $size;
+    border: 0.02 * $size solid $light;
+  }  
+}
+#episode1,#episode3,#episode4,#episode5{
+   .mario, .cactus {
+     float: left;
+     margin-top: $size;
+   }
+}
+#episode2 {
+  .mario, .cactus {
+    margin-left: $size;
+  }
+  .cactus {
+    margin-top: -0.07 * $size;
+  }
+}
+@for $n from 3 through 5 {
+  section:nth-of-type(#{$n}){
+    .mario {
+      transform: translateX($n * $size -$size);
+    }   
+  }
+}
+ 
+

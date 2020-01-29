@@ -1,0 +1,40 @@
+section {
+  width: 250px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+section .mario img, section .cactus img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid green;
+}
+
+#episode1 .mario, #episode1 .cactus, #episode3 .mario, #episode3 .cactus, #episode4 .mario, #episode4 .cactus, #episode5 .mario, #episode5 .cactus {
+  float: left;
+  margin-top: 50px;
+}
+
+#episode2 .mario, #episode2 .cactus {
+  margin-left: 50px;
+}
+
+#episode2 .cactus {
+  margin-top: -3.5px;
+}
+
+section:nth-of-type(3) .mario {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+section:nth-of-type(4) .mario {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+section:nth-of-type(5) .mario {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+/*# sourceMappingURL=style.css.map */
